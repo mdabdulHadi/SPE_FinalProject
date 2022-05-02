@@ -3,7 +3,7 @@ services:
   app:
     container_name: docker-node-mongo
     restart: always
-    image: arorashivang97/spe-project:app
+    image: immdabdulhadi/spe-project:app
     volumes:
       - ./home/sem8/spe/elk/logs:/code/app/log
     ports:
@@ -13,6 +13,6 @@ services:
       - mongo
   mongo:
     container_name: mongo
-    image: arorashivang97/spe-project:app_mongo
+    image: immdabdulhadi/spe-project:app_mongo
     ports:
       - '27017:27017'
